@@ -1,0 +1,23 @@
+{
+  "name": "aculco",
+  "version": "1.0.0",
+  "description": "Pagina de prueba",
+  "homepage": "https://github.com/dlucianop/aculco#readme",
+  "bugs": {
+    "url": "https://github.com/dlucianop/aculco/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlucianop/aculco.git"
+  },
+  "license": "ISC",
+  "author": "dlucianop",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
