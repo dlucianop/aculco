@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción</title>
+    <style>
+        body {
+    font-family: 'Literata', serif;
+    background: linear-gradient(to right, #d4a373, white, white, white, #d4a373);
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    text-align: center;
+}
+header {
+    position: relative;
+    background: linear-gradient(to right, #d4a373, white, white, white, #d4a373);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-center {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'Literata', sans-serif;
+    color: #7E0828;
+}
+
+.fondo-logo {
+    position: absolute;
+    top: 0;
+    width: 30%; 
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.1;
+    pointer-events: none; 
+}
+
+.fondo-logo.izquierda {
+    left: 0;
+}
+
+.fondo-logo.derecha {
+    right: 0;
+}
+
+.fondo-logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+        h1 {
+            font-size: 2.5em;
+            color: #7E0828;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        /* Contenedor para posicionar los engranajes */
+.gear-container {
+  position: relative;
+  width: 200px; /* Tamaño del contenedor */
+  height: 200px;
+  margin: 50px auto; /* Centrado horizontal */ /* (opcional) para visualizar los límites del contenedor */
+}
+
+/* Estilos generales para ambas imágenes */
+.gear {
+  position: absolute;
+  width: 100%; /* Tamaño base */
+  height: auto;
+  animation: rotateClockwise 20s linear infinite;
+}
+
+/* Engranaje 1 (centrado) */
+.gear1 {
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) rotate(0deg); /* Centrar en el contenedor */
+}
+
+/* Engranaje 2 (en esquina inferior derecha) */
+.gear2 {
+  top: 75%; /* Ajustar posición vertical */
+  left: 75%; /* Ajustar posición horizontal */
+  transform: translate(-50%, -50%) rotate(0deg); /* Centrar en su nueva posición */
+  width: 50%; /* Tamaño más pequeño */
+  animation: rotateCounterClockwise 20s linear infinite;
+}
+
+/* Animaciones */
+@keyframes rotateClockwise {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="fondo-logo izquierda">
+        <img src="../public/img/header/fondo-header.png" alt="" class="simbolo">
+    </div>
+    <div class="container">
+        <div class="gear-container">
+            <img src="../public/img/constructor/gear.png" alt="Gear 1" class="gear gear1">
+            <img src="../public/img/constructor/gear2.png" alt="Gear 2" class="gear gear2">
+          </div>          
+        <h1>¡Estamos trabajando en ello!</h1>
+        <p>Esta página está en construcción. Vuelve pronto para descubrir las actualizaciones y novedades. Da click aqui para regresar a la pagina principal</p>
+        <p>Gracias por tu paciencia.</p>
+        <div class="contact">
+            <p>¿Tienes dudas? Contáctanos:</p>
+            <p>📞 Teléfonos: <a href="tel:##########">+01(718) 1240145</a><br> <a href="tel:##########">+01(718) 1240145</a></p>
+            <p>📧 Correo: <a href="mailto:presidencia.aculco1921@gmail.com">presidencia.aculco1921@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="fondo-logo derecha">
+        <img src="../public/img/header/fondo-header.png" alt="" class="simbolo">
+    </div>
+    
+    
+</body>
+</html>
