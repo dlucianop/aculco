@@ -18,16 +18,6 @@ app.get('/gobierno-municipal/presidencia', (req, res) => {
     res.sendFile(path.join(__dirname,'..' ,'static', 'gob-municipal.html'));
 });
 
-
-
-
-
-
-
-
-
-
-
 app.listen(3000);
 
 console.log(`Server on port ${3000}`)
